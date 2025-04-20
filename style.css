@@ -209,18 +209,22 @@ body {
   }
   
 
-@media screen and (max-width: 480px) {
-  /* Keep envelope the same */
-  .envelope-container {
-    width: 200px;
-    height: 150px;
+@media (max-width: 480px) {
+  /* Keep the envelope fixed size */
+  .envelope-container,
+  .envelope {
+    width: 200px !important;
+    height: 150px !important;
   }
 
-  /* Adjust letter only */
+  /* Make only the letter responsive */
   .envelope.open .letter {
     width: 90vw;
-    height: 80vh;
+    max-width: 400px;
+    height: auto;
+    max-height: 80vh;
     padding: 20px;
+    transform: translate(-50%, -50%);
   }
 
   .letter-content {
