@@ -209,53 +209,15 @@ body {
   }
   
 
-@media (max-width: 480px) {
-  /* Keep the envelope fixed size */
-  .envelope-container,
-  .envelope {
-    width: 200px !important;
-    height: 150px !important;
+  /* 📱 Mobile Styles */
+  @media (max-width: 480px) {
+    .envelope.open .letter {
+      width: 90vw;
+      height: 260px;
+    }
+  
+    .letter-content p {
+      font-size: 16px;
+    }
   }
-
-  /* Make only the letter responsive */
-  .envelope.open .letter {
-    width: 90vw;
-    max-width: 400px;
-    height: auto;
-    max-height: 80vh;
-    padding: 20px;
-    transform: translate(-50%, -50%);
-  }
-
-  .letter-content {
-    padding: 60px 15px 20px 15px;
-    height: auto;
-  }
-
-  .letter-content p {
-    font-size: 14px;
-  }
-
-  .salutation {
-    top: 25px;
-    left: 15px;
-    font-size: 13px;
-  }
-
-  .closing {
-    bottom: 60px;
-    right: 15px;
-    font-size: 12px;
-  }
-
-  .seal {
-    font-size: 18px;
-    top: 42%;
-  }
-
-  .close-btn {
-    top: 8px;
-    right: 8px;
-    font-size: 13px;
-  }
-}
+  
