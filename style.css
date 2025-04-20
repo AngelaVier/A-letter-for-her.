@@ -219,12 +219,11 @@ body {
 @media (max-width: 480px) {
   .envelope.open .letter {
     width: 90vw;
-    height: 260px;
+    height: 350px;
   }
 
   .letter-content p {
     font-size: 16px;
-    padding-top: 20px;
   }
 
   .letter {
