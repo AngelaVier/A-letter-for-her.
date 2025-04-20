@@ -99,7 +99,7 @@ body {
   top: 50%;
   left: 50%;
   width: 400px;
-  height: 550px;
+  height: max-content;
   transform: translate(-50%, -50%);
   z-index: 999;
   opacity: 1; /* ADD THIS */
