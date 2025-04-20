@@ -209,20 +209,23 @@ body {
   }
   
 
-@media (max-width: 768px) {
+@media screen and (max-width: 480px) {
+  /* Keep envelope the same */
   .envelope-container {
-    width: 70vw;
-    height: 45vh;
+    width: 200px;
+    height: 150px;
   }
 
+  /* Adjust letter only */
   .envelope.open .letter {
     width: 90vw;
-    height: 70vh;
+    height: 80vh;
     padding: 20px;
   }
 
   .letter-content {
-    padding: 50px 15px 15px;
+    padding: 60px 15px 20px 15px;
+    height: auto;
   }
 
   .letter-content p {
@@ -230,20 +233,20 @@ body {
   }
 
   .salutation {
-    top: 30px;
+    top: 25px;
     left: 15px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .closing {
-    bottom: 70px;
+    bottom: 60px;
     right: 15px;
     font-size: 12px;
   }
 
   .seal {
-    font-size: 20px;
-    top: 40%;
+    font-size: 18px;
+    top: 42%;
   }
 
   .close-btn {
