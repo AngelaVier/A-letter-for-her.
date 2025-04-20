@@ -209,15 +209,46 @@ body {
   }
   
 
-  /* 📱 Mobile Styles */
-  @media (max-width: 480px) {
-    .envelope.open .letter {
-      width: 90vw;
-      height: 260px;
-    }
-  
-    .letter-content p {
-      font-size: 16px;
-    }
+@media (max-width: 768px) {
+  .envelope-container {
+    width: 70vw;
+    height: 45vh;
   }
-  
+
+  .envelope.open .letter {
+    width: 90vw;
+    height: 70vh;
+    padding: 20px;
+  }
+
+  .letter-content {
+    padding: 50px 15px 15px;
+  }
+
+  .letter-content p {
+    font-size: 14px;
+  }
+
+  .salutation {
+    top: 30px;
+    left: 15px;
+    font-size: 14px;
+  }
+
+  .closing {
+    bottom: 70px;
+    right: 15px;
+    font-size: 12px;
+  }
+
+  .seal {
+    font-size: 20px;
+    top: 40%;
+  }
+
+  .close-btn {
+    top: 8px;
+    right: 8px;
+    font-size: 13px;
+  }
+}
